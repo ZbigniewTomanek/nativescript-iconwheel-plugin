@@ -1,39 +1,37 @@
-# nativescript-wheel-view
+# Overview
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
+This is a custom native android plugin which adds widget with hardcoded weather icons.
 
-Then describe what's the purpose of your plugin. 
+I've been using these tutorials:
 
-In case you develop UI plugin, this is where you can add some screenshots.
+https://docs.nativescript.org/plugins/building-plugins
+https://docs.nativescript.org/plugins/ui-plugin-custom#building-ui-plugins-using-custom-components
 
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+Plugin itself is built on the top of this scaffold:
+https://github.com/NativeScript/nativescript-plugin-seed
 
 ## Installation
 
-Describe your plugin installation steps. Ideally it would be something like:
-
-```javascript
-tns plugin add nativescript-wheel-view
+To install plugin download publish/package/nativescript-wheel-view-1.0.0.tgz, copy it to your app and run
+```
+tns plugin add nativescript-version-number-1.0.0.tgz
 ```
 
-## Usage 
+## Run demo
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
+To see a workind demo run from src folder `npm run demo.android`
 
-## API
+## Example usage
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
+Demo's source code is in the demo dictionary. Widget is declared in home-page.xml and its listener is placed home-view-model.ts.
+
+## Android plugin source code
+
+To edit native part of plugin you should open PluginJava project with android studio, edit it and then export fresh .aar archive.
+Then this archive should be pasted to src/platforms/android/.
+
+WheelView source code was borrowed from here:
+https://github.com/wangjiegulu/WheelView
     
 ## License
 
