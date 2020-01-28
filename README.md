@@ -7,19 +7,19 @@ I've been using these tutorials:
 https://docs.nativescript.org/plugins/building-plugins
 https://docs.nativescript.org/plugins/ui-plugin-custom#building-ui-plugins-using-custom-components
 
-Plugin itself is built on the top of this scaffold:
-https://github.com/NativeScript/nativescript-plugin-seed
+Plugin itself is built on the top of [this](https://github.com/NativeScript/nativescript-plugin-seed) scaffold:
+
 
 ## Installation
 
-To install plugin download publish/package/nativescript-wheel-view-1.0.0.tgz, copy it to your app and run
+To install plugin download `publish/package/nativescript-wheel-view-1.0.0.tgz`, copy it to your app and run
 ```
 tns plugin add nativescript-version-number-1.0.0.tgz
 ```
 
 ## Run demo
 
-To see a workind demo run from src folder `npm run demo.android`
+To see a working demo run from src folder `npm run demo.android`
 
 ## Example usage
 
@@ -28,7 +28,9 @@ Demo's source code is in the demo dictionary. Widget is declared in home-page.xm
 ## Android plugin source code
 
 To edit native part of plugin you should open PluginJava project with android studio, edit it and then export fresh .aar archive.
-Then this archive should be pasted to src/platforms/android/.
+Then this archive should be pasted to `src/platforms/android/`.
+
+[Here](https://developer.android.com/studio/projects/android-library) you can learn how to export aar plugin.
 
 WheelView source code was borrowed from here:
 https://github.com/wangjiegulu/WheelView
