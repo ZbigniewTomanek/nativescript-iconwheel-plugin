@@ -1,0 +1,13 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:WheelView="nativescript-wheel-view">
+    
+    <ActionBar>
+        <Label text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout>
+        <WheelView:IconWheelView change="{{ onChange }}"></WheelView:IconWheelView>
+    </GridLayout>
+</Page>
